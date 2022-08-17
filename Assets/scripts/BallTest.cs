@@ -24,12 +24,13 @@ public class BallTest : MonoBehaviour
     // Update is called once per frame
     void Update() {
         Vector3 currentPosition = ballObject.transform.position;
-        if (currentPosition.z < -0.5 && (Time.time - startTime ) > 3.0f ) {
+        if (currentPosition.z < -0.5 && (Time.time - startTime ) > 2.0f ) {
             _rb.velocity = Vector3.zero;
             _rb.angularVelocity = Vector3.zero;
             ballObject.transform.position = startPosition;
             ballObject.transform.rotation = startRotation;
             _rb.AddForce(firstDirection * power);
+            startTime = Time.time;
         }
     }
 }
