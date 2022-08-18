@@ -30,13 +30,13 @@ public class BallTest : MonoBehaviour
     // Update is called once per frame
     void Update() {
         Vector3 currentPosition = ballObject.transform.position;
-        if (currentPosition.z < -0.5 ) {
-          if (speedcount < 1) {
+        if (currentPosition.z < -0.5 || currentPosition.y < -1.5) {
+          if (currentPosition.z < -0.5 && speedcount < 1) {
             speedcount++;
             speedsum += _rb.velocity.z;
           }
 
-          if ((Time.time - startTime ) > 2.0f ) {
+          if ((Time.time - startTime ) > 3.0f ) {
             float speedText = ((speedsum / speedcount) * -3.6f);
             speedText = Mathf.Floor(speedText);
             DisplaySpeedEvent?.Invoke(speedText.ToString() + "km/h");
