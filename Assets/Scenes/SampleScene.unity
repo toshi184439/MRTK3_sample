@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 648729667}
   - component: {fileID: 648729666}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -909,12 +909,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9ffb5d57ad3a45945a69dbeac2dff9cc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ffb5d57ad3a45945a69dbeac2dff9cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.44
+      value: 16.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ffb5d57ad3a45945a69dbeac2dff9cc,
         type: 3}
@@ -964,7 +964,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9ffb5d57ad3a45945a69dbeac2dff9cc,
         type: 3}
       propertyPath: m_Name
-      value: baseball_ball
+      value: baseballBall
       objectReference: {fileID: 0}
     - target: {fileID: 7882426737595231900, guid: 9ffb5d57ad3a45945a69dbeac2dff9cc,
         type: 3}
@@ -1291,22 +1291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 1708652459}
-  power: 500
-  DisplaySpeedEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9058511968974674077}
-        m_TargetAssemblyTypeName: DisplayBallSpeed, Assembly-CSharp
-        m_MethodName: DisplayText
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  power: 180
 --- !u!1 &1964602097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,7 +1310,7 @@ GameObject:
   - component: {fileID: 1964602098}
   - component: {fileID: 1964602106}
   m_Layer: 0
-  m_Name: Mob_BaseBall_Bat_LOD_0
+  m_Name: RawlingsBat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2585,9 +2570,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'ball speed
-
-    0km/h'
+  m_text: 0km/h
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 533bdd8d5c92b52448ee2ecf7bd828a4, type: 2}
   m_sharedMaterial: {fileID: -1005824763306460071, guid: 533bdd8d5c92b52448ee2ecf7bd828a4,
@@ -3288,7 +3271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6612599086428670580}
   m_Layer: 0
-  m_Name: Slate
+  m_Name: BallSpeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8452,8 +8435,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6516883591013066450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0608, y: 0.0749, z: 0}
-  m_LocalScale: {x: 1, y: 1.3027, z: 1}
+  m_LocalPosition: {x: 0.0608, y: 0.0749, z: 0.34}
+  m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9058511968974674076}
@@ -9805,7 +9788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2589716729974957068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.429, y: 0, z: -0.008}
+  m_LocalPosition: {x: -0.429, y: 0.25, z: -0.008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10791,7 +10774,7 @@ RectTransform:
   m_GameObject: {fileID: 6406055598555662288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.004}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 10, y: 5, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6070966255651412732}
