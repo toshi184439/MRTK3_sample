@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using System;
 
 public class BallTest : MonoBehaviour
 {
     public Rigidbody _rb;
     public int power;
-    private Vector3 firstDirection = new Vector3(0f, 0.1f, -1.0f); //カメラの方向に投げてみる
+    private UnityEvent<string> DisplaySpeedEvent = new UnityEvent<string>();
+    private Vector3 firstDirection = new Vector3(0f, 0.01f, -1.0f); //カメラの方向に投げてみる
     private Vector3 startPosition;
     private Quaternion startRotation;
     private GameObject ballObject;
@@ -19,12 +22,15 @@ public class BallTest : MonoBehaviour
         startRotation = ballObject.transform.rotation;
         _rb.AddForce(firstDirection * power);
         startTime = Time.time;
+        DisplaySpeedEvent.AddListener(DisplayBallSpeed.instance.DisplayText);
     }
 
     // Update is called once per frame
     void Update() {
         Vector3 currentPosition = ballObject.transform.position;
         if (currentPosition.z < -0.5 && (Time.time - startTime ) > 2.0f ) {
+            double speedText = (_rb.velocity.magnitude * 3.6);
+            DisplaySpeedEvent?.Invoke("ball speed\n" + speedText.ToString() + " km/h");
             _rb.velocity = Vector3.zero;
             _rb.angularVelocity = Vector3.zero;
             ballObject.transform.position = startPosition;
