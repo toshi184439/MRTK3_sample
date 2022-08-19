@@ -130,6 +130,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 127974212}
+    - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeBuntTrainingScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SwitchScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 762297244258590780, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_text
+      value: Bunt Traning
+      objectReference: {fileID: 0}
+    - target: {fileID: 762297244258590780, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 762297244846027212, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_Name
+      value: BuntTraining
+      objectReference: {fileID: 0}
     - target: {fileID: 762297244846027212, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
       propertyPath: m_IsActive
@@ -205,6 +255,32 @@ PrefabInstance:
       propertyPath: m_text
       value: Play Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 3712689117025071688, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712689117025071688, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4,
+        type: 2}
+    - target: {fileID: 3712689117025071688, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 3712689117025071688, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712689117025071689, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     - target: {fileID: 4514171585675083571, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
       propertyPath: m_IsActive
@@ -227,6 +303,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dddb70eddc7beb941855963d99461502, type: 3}
+--- !u!1 &127974211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3712689116661637512, guid: dddb70eddc7beb941855963d99461502,
+    type: 3}
+  m_PrefabInstance: {fileID: 127974210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &127974212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127974211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204073a0806ce0647a9fd35b21d531a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1065794384
 PrefabInstance:
   m_ObjectHideFlags: 0
