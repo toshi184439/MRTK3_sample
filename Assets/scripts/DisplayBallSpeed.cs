@@ -24,7 +24,6 @@ public class DisplayBallSpeed : MonoBehaviour
     // Display ball speed
     public void DisplayText(string text) {
         _text.SetText(text);
-        Debug.Log(text);
     }
 
     // Update is called once per frame
