@@ -14,6 +14,10 @@ public class SwitchScene : MonoBehaviour
       SceneManager.LoadScene("DefenceTrainingScene");
     }
 
+    public void ChangeStartScene() {
+      SceneManager.LoadScene("StartScene");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
