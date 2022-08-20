@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class SwitchScene : MonoBehaviour
 {
 
-    public void ChangeBuntTrainingScene() {
-      SceneManager.LoadScene("BuntTrainingScene");
+    public void ChangeOffenceTrainingScene() {
+      SceneManager.LoadScene("OffenceTrainingScene");
+    }
+
+    public void ChangeDefenceTrainingScene() {
+      SceneManager.LoadScene("DefenceTrainingScene");
     }
 
     // Start is called before the first frame update

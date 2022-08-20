@@ -168,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 762297244258590780, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
       propertyPath: m_text
-      value: Bunt Traning
+      value: Offence Traning
       objectReference: {fileID: 0}
     - target: {fileID: 762297244258590780, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
@@ -178,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 762297244846027212, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
       propertyPath: m_Name
-      value: BuntTraining
+      value: OffenceTraining
       objectReference: {fileID: 0}
     - target: {fileID: 762297244846027212, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
@@ -189,6 +189,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 127974212}
+    - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeDefenceTrainingScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SwitchScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2131564428350754925, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_Name
+      value: DefenceTraining
+      objectReference: {fileID: 0}
+    - target: {fileID: 2131564428803441053, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_text
+      value: Defence Training
+      objectReference: {fileID: 0}
+    - target: {fileID: 2131564428803441053, guid: dddb70eddc7beb941855963d99461502,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 3712689116661637512, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
