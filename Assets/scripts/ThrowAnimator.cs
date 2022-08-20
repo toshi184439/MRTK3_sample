@@ -6,6 +6,7 @@ public class ThrowAnimator : MonoBehaviour
 {
     Animator _animator;
     AnimatorStateInfo _animeStateInfo;
+    public GameObject RightHand;
     private float startTime;
     private float currentTime;
     private Vector3 startPosition;
@@ -46,7 +47,7 @@ public class ThrowAnimator : MonoBehaviour
           _addforce = false;
         } else if(currentTime - startTime > 1.65f) {
           if(_addforce == false) {
-            BallTest.instance.AddForce();
+            BallTest.instance.AddForce(RightHand.transform);
             _addforce = true;
           }
         }
