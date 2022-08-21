@@ -153,7 +153,7 @@ PrefabInstance:
     - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeBuntTrainingScene
+      value: ChangeOffenceTrainingScene
       objectReference: {fileID: 0}
     - target: {fileID: 102845563198256811, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
@@ -213,7 +213,7 @@ PrefabInstance:
     - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeDefenceTrainingScene
+      value: ChangeOffenceTrainingScene
       objectReference: {fileID: 0}
     - target: {fileID: 1616104785152497418, guid: dddb70eddc7beb941855963d99461502,
         type: 3}
