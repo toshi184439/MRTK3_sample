@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ChangeForce : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class ChangeForce : MonoBehaviour
     int _changePower = 30; //変化させる力
 
     public TypeOfBreakingBall _TypeOfBreakingBall = TypeOfBreakingBall.actual;
+    private UnityEvent<string> DisplayKindOfPitchEvent = new UnityEvent<string>();
 
     Vector3 _shootDirection = new Vector3(-1.0f, -0.1f, 0);
     Vector3 _sinkerDirection = new Vector3(-0.5f, -0.5f, 0);
@@ -38,6 +40,7 @@ public class ChangeForce : MonoBehaviour
       _typeBreackingBallVec.Add(_forkDirection);
       _typeBreackingBallVec.Add(_curveDirection);
       _typeBreackingBallVec.Add(_sliderDirection);
+      DisplayKindOfPitchEvent.AddListener(DisplayKindOfPitch.instance.DisplayText);
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -53,6 +56,7 @@ public class ChangeForce : MonoBehaviour
       int rnd = Random.Range(0, 6);
       ball_rb.AddForce(_typeBreackingBallVec[rnd] * _changePower);  //ボールに力を加える
       Debug.Log(_typeofBrakingBall[rnd]);
+      DisplayKindOfPitchEvent?.Invoke(_typeofBrakingBall[rnd]);
     }
 
     // Start is called before the first frame update
