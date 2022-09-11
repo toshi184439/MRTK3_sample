@@ -14,6 +14,8 @@ public class ChangeForce : MonoBehaviour
 
     ChangeForce instance;
 
+    bool random = false;
+
     int _changePower = 30; //変化させる力
 
     public TypeOfBreakingBall _TypeOfBreakingBall = TypeOfBreakingBall.actual;
@@ -52,11 +54,20 @@ public class ChangeForce : MonoBehaviour
         }
     }
 
+    public void ToggleRandom() {
+      random = !random;
+    }
+
     private void ChangeBallForce(Rigidbody ball_rb) {
-      int rnd = Random.Range(0, 6);
-      ball_rb.AddForce(_typeBreackingBallVec[rnd] * _changePower);  //ボールに力を加える
-      Debug.Log(_typeofBrakingBall[rnd]);
-      DisplayKindOfPitchEvent?.Invoke(_typeofBrakingBall[rnd]);
+      if(random) {
+        int rnd = Random.Range(0, 6);
+        ball_rb.AddForce(_typeBreackingBallVec[rnd] * _changePower);  //ボールに力を加える
+        Debug.Log(_typeofBrakingBall[rnd]);
+        DisplayKindOfPitchEvent?.Invoke(_typeofBrakingBall[rnd]);
+      } else {
+        ball_rb.AddForce(_typeBreackingBallVec[0]);
+        DisplayKindOfPitchEvent?.Invoke(_typeofBrakingBall[0]);
+      }
     }
 
     // Start is called before the first frame update
