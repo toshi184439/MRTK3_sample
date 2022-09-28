@@ -11,7 +11,7 @@ public class BallTest : MonoBehaviour
     public Rigidbody _rb;
     public int power;
     private UnityEvent<string> DisplaySpeedEvent = new UnityEvent<string>();
-    private Vector3 firstDirection = new Vector3(0f, -0.05f, -2.0f); //カメラの方向に投げてみる
+    private Vector3 firstDirection = new Vector3(0f, 0.02f, -2.0f); //カメラの方向に投げてみる
     private Vector3 startPosition;
     private Quaternion startRotation;
     private GameObject ballObject;
@@ -39,7 +39,7 @@ public class BallTest : MonoBehaviour
     // Update is called once per frame
     void Update() {
       Vector3 currentPosition = ballObject.transform.position;
-      if (currentPosition.z < -0.5 && !_speedUpdated) {
+      if (currentPosition.z < 3.0 && !_speedUpdated) {
         float speedText = (_rb.velocity.z * -3.6f);
         speedText = Mathf.Floor(speedText);
         DisplaySpeedEvent?.Invoke(speedText.ToString() + "km/h");
